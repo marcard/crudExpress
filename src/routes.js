@@ -1,10 +1,11 @@
 const express = require('express');
-const BancoController = require('./controllers/BancoController')
+const AlunoController = require('./controllers/AlunoController')
 const routes = express.Router();
 
-routes.get('/', BancoController.get);
-routes.post('/add/', BancoController.post);
-routes.put('/edit/:_id', BancoController.update);
-routes.delete('/delete/:_id', BancoController.destroy);
+routes.get('/', AlunoController.index);
+// routes.get('/delete/:_id', AlunoController.destroy);
+// routes.post('/aluno/add/', AlunoController.post);
+// routes.post('/edit/:_id', AlunoController.update);
+
 
 module.exports = routes;

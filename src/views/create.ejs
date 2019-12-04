@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action='/aluno/add' method='post' encType="multipart/form-data">
+            <label for="nome">Nome Aluno:</label>
+            <input type="text" name="nameAluno" id="nome"/>
+            <label for="data_nasc">Data Nascimento:</label>
+            <input type="date" name="data_nasc" id="data_nasc" />
+            <label for="raAluno">RA do Aluno:</label>
+            <input type="number" name="raAluno" id="raAluno">
+            <input type="file" name="file" />
+            <input type='submit' value='Upload!' />
+        </form>
+    </div>
+</body>
+</html>
